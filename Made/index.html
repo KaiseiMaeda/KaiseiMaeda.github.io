@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -7,9 +8,12 @@
   <meta name="description" content="文化祭メイド占い屋のシフト表。担当メイドさんを時間帯別にチェックできます。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ヘッダー -->
@@ -27,24 +31,52 @@
     </div>
   </header>
 
-  <!-- 日付タブ -->
-  <div class="date-tabs">
-    <button class="date-tab active" id="tab-512" onclick="switchDay('512')">
-      <span class="tab-month">5月</span>
-      <span class="tab-day">12日</span>
-      <span class="tab-week">土</span>
-    </button>
-    <button class="date-tab" id="tab-513" onclick="switchDay('513')">
-      <span class="tab-month">5月</span>
-      <span class="tab-day">13日</span>
-      <span class="tab-week">日</span>
-    </button>
+  <!-- ========== 一覧タブ ========== -->
+  <div id="page-list" class="page-container active">
+
+    <!-- 日付タブ -->
+    <div class="date-tabs">
+      <button class="date-tab active" id="tab-512" onclick="switchDay('512')">
+        <span class="tab-month">5月</span>
+        <span class="tab-day">12日</span>
+        <span class="tab-week">土</span>
+      </button>
+      <button class="date-tab" id="tab-513" onclick="switchDay('513')">
+        <span class="tab-month">5月</span>
+        <span class="tab-day">13日</span>
+        <span class="tab-week">日</span>
+      </button>
+    </div>
+
+    <!-- メインコンテンツ（一覧） -->
+    <main class="main-content" id="main-content">
+      <!-- JSで動的に生成 -->
+    </main>
+
   </div>
 
-  <!-- メインコンテンツ -->
-  <main class="main-content" id="main-content">
-    <!-- JSで動的に生成 -->
-  </main>
+  <!-- ========== 相性診断タブ ========== -->
+  <div id="page-aisho" class="page-container">
+    <div class="coming-soon-wrap">
+      <div class="coming-soon-icon">🔮</div>
+      <div class="coming-soon-title">作成中かも！</div>
+      <div class="coming-soon-sub">乞うご期待</div>
+      <div class="coming-soon-stars">✦ ✦ ✦</div>
+      <!-- ここに相性診断のコンテンツを追加する -->
+    </div>
+  </div>
+
+  <!-- ========== ランキングタブ ========== -->
+  <div id="page-ranking" class="page-container">
+    <div class="ranking-header">
+      <span class="ranking-title-icon">👑</span>
+      <span class="ranking-title-text">人気ランキング</span>
+    </div>
+    <div id="ranking-list" class="ranking-list">
+      <!-- JSで動的に生成 -->
+    </div>
+    <div class="footer-deco">✦ 文化祭 メイド占い屋 ✦</div>
+  </div>
 
   <!-- モーダル -->
   <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
@@ -54,7 +86,27 @@
     </div>
   </div>
 
+  <!-- 下部タブバー -->
+  <nav class="bottom-tab-bar">
+    <button class="bottom-tab active" id="btab-list" onclick="switchTab('list')">
+      <span class="bottom-tab-icon">📋</span>
+      <span class="bottom-tab-label">シフト一覧</span>
+    </button>
+    <button class="bottom-tab" id="btab-aisho" onclick="switchTab('aisho')">
+      <span class="bottom-tab-icon">💫</span>
+      <span class="bottom-tab-label">相性診断</span>
+    </button>
+    <button class="bottom-tab" id="btab-ranking" onclick="switchTab('ranking')">
+      <span class="bottom-tab-icon">👑</span>
+      <span class="bottom-tab-label">ランキング</span>
+    </button>
+  </nav>
+
   <script src="data.js"></script>
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
