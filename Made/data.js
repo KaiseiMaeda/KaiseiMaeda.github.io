@@ -225,19 +225,19 @@ const STAFF = [
   },
   {
     id: 19,
-    name: "19",
-    ruby: "19",
+    name: "きゅま",
+    ruby: "きゅうま",
     emoji: "",
-    role: "未詳",
-    tags: ["未詳"],
-    message: "未定",
-    color: "#ffffffff",
+    role: "猿",
+    tags: ["猿"],
+    message: "ホハァッ！！ホハッ！ホホホホッ！！\nキィィーッ！ホハァッ！ホッホッホッ！！\nホハッ！ホハァァァッ！！",
+    color: "#205ba9",
     details: [
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" }
+      { icon: "🙈", label: "ホホハ", value: "ホハ" },
+      { icon: "🐒", label: "ホハホハ", value: "ホホホ" },
+      { icon: "🙉", label: "ホハハハ", value: "ホホハ" },
+      { icon: "🙊", label: "ホハ", value: "ホハホハ" },
+      { icon: "🦧", label: "ホホホ", value: "ホハハハ" }
     ]
   },
   {

@@ -192,8 +192,11 @@ function renderSchedule(day) {
       const staff = getStaff(id);
       if (!staff) return;
 
+      // カラーコードが8桁（#RRGGBBAA）の場合を考慮して、最初の7文字（#RRGGBB）のみを使用
+      const baseColor = staff.color.slice(0, 7);
+
       html += `
-        <div class="profile-card" onclick="openModal(${staff.id}, '${slot.label}', '${slot.id}')" id="card-${slot.id}-${staff.id}" style="background: linear-gradient(145deg, ${staff.color}15, ${staff.color}08); border-color: ${staff.color}60; --staff-color: ${staff.color};">
+        <div class="profile-card" onclick="openModal(${staff.id}, '${slot.label}', '${slot.id}')" id="card-${slot.id}-${staff.id}" style="background: linear-gradient(145deg, ${baseColor}0a, ${baseColor}05); border-color: ${baseColor}25; --staff-color: ${baseColor};">
           <div class="card-avatar-emoji">
             <img class="card-avatar-photo"
               src="photos/${staff.id}.jpg"
@@ -347,8 +350,10 @@ function updateModalContent(staffId) {
     const rankText = rank ? ordinal(rank) : "-";
     const voteCount = getVotes(staffId);
 
+    const baseColor = staff.color.slice(0, 7);
+
     inner.innerHTML = `
-      <div class="modal-avatar" style="--staff-color: ${staff.color}; box-shadow: 0 0 0 4px ${staff.color}, 0 8px 24px rgba(0,0,0,0.15);">
+      <div class="modal-avatar" style="--staff-color: ${baseColor}; box-shadow: 0 0 0 4px ${baseColor}, 0 8px 24px rgba(0,0,0,0.15);">
         <img class="modal-avatar-photo"
           src="photos/${staff.id}.jpg"
           onload="this.classList.add('loaded');this.nextElementSibling.style.display='none'"
