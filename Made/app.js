@@ -219,7 +219,7 @@ function renderSchedule(day) {
     html = `<div class="empty-state">この日のシフトはありません</div>`;
   }
 
-  html += `<div class="footer-deco">✦ 文化祭 メイド占い屋 ✦</div>`;
+  html += `<div class="footer-deco">✦ Made You Happy 製作委員会 ✦</div>`;
   main.innerHTML = html;
 }
 
