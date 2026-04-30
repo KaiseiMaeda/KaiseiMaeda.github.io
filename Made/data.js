@@ -293,19 +293,19 @@ const STAFF = [
   },
   {
     id: 25,
-    name: "25",
-    ruby: "25",
+    name: "くうちゃん",
+    ruby: "くう",
     emoji: "",
     role: "未詳",
-    tags: ["未詳"],
-    message: "未定",
-    color: "#ffffffff",
+    tags: ["マイペース"],
+    message: "愛嬌は期待しないでください。",
+    color: "#000000",
     details: [
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" }
+      { icon: "", label: "趣味", value: "映画鑑賞、音楽鑑賞" },
+      { icon: "", label: "好きな食べ物", value: "魚、スイーツ" },
+      { icon: "", label: "好きな映画", value: "セッション、テネット" },
+      { icon: "", label: "好きな動物", value: "キツネ、レッサーパンダ" },
+      { icon: "", label: "毎日の楽しみ", value: "美味しいものを食べること" }
     ]
   },
   {
