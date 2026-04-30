@@ -137,7 +137,7 @@ const STAFF = [
   },
   {
     id: 12,
-    name: "しま",
+    name: "しまちゃん",
     ruby: "はると",
     emoji: "",
     role: "未詳",
