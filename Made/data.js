@@ -218,19 +218,19 @@ const STAFF = [
   },
   {
     id: 18,
-    name: "18",
-    ruby: "18",
+    name: "あずちゃん",
+    ruby: "あずさ",
     emoji: "",
     role: "未詳",
-    tags: ["未詳"],
-    message: "未定",
-    color: "#ffffffff",
+    tags: ["気まぐれ", "適当"],
+    message: "私にしちゃえば？？",
+    color: "#932e44",
     details: [
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" }
+      { icon: "🐾", label: "犬派or 猫派", value: "猫派" },
+      { icon: "🍣", label: "好きな食べ物", value: "お寿司 タケノコ うどん" },
+      { icon: "🌊", label: "好きな場所", value: "海" },
+      { icon: "🎬", label: "趣味", value: "映画を見ること" },
+      { icon: "🍵", label: "好きな味", value: "抹茶 チョコ" }
     ]
   },
   {
