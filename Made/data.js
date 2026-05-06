@@ -419,19 +419,17 @@ const STAFF = [
   },
   {
     id: 36,
-    name: "36",
-    ruby: "36",
+    name: "のんちゃん",
+    ruby: "かのん",
     emoji: "",
     role: "未詳",
-    tags: ["未詳"],
-    message: "未定",
-    color: "#ffffffff",
+    tags: ["しっかり者✨"],
+    message: "授業中眠くなる魔法〜♡",
+    color: "#ffffff",
     details: [
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" },
-      { icon: "", label: "XXXXXX", value: "未定" }
+      { icon: "", label: "好きなご飯", value: "オムライス" },
+      { icon: "", label: "好きな動物", value: "ホワイトタイガー" },
+      { icon: "", label: "趣味", value: "食事" }
     ]
   },
   {
