@@ -427,9 +427,9 @@ const STAFF = [
     message: "授業中眠くなる魔法〜♡",
     color: "#ffffff",
     details: [
-      { icon: "", label: "好きなご飯", value: "オムライス" },
-      { icon: "", label: "好きな動物", value: "ホワイトタイガー" },
-      { icon: "", label: "趣味", value: "食事" }
+      { icon: "🍳", label: "好きなご飯", value: "オムライス" },
+      { icon: "🐅", label: "好きな動物", value: "ホワイトタイガー" },
+      { icon: "🍽️", label: "趣味", value: "食事" }
     ]
   },
   {
